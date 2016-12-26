@@ -3,7 +3,7 @@ resources:
   - name: git-repo
     type: git
     source:
-      uri: https://github.com/kalaiganeshan/concourse
+      uri: https://github.com/kalaiganeshan/concourse.git
       branch: master
   - name: time
     type: time
