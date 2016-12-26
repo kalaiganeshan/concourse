@@ -20,9 +20,9 @@ jobs:
       - get: time
     - task: maven-package
       privileged: true
-      file: git-repo/pipeline/maven-package.yml
+      file: concourse/pipeline/maven-package.yml
     - task: rename-file
-      file: git-repo/pipeline/rename-file.yml
+      file: concourse/pipeline/rename-file.yml
 
 #   - name: rename file
 #     plan:
