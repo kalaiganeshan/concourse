@@ -24,12 +24,12 @@ jobs:
     - task: rename-file
       file: concourse/pipeline/rename-file.yml
 
-#   - name: rename file
-#     plan:
-#     - aggregate:
-#       - get: jar-file
-#         trigger: true
-#         passed: [maven-package]
-#       - get: time
-#     - task: rename-file
-#       file: git-repo/pipeline/rename-file.yml
+  - name: rename file
+    plan:
+    - aggregate:
+      - get: jar-file
+        trigger: true
+        passed: [maven-package]
+      - get: time
+    - task: rename-file
+     file: concourse/pipeline/rename-file.yml
