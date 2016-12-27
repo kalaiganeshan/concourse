@@ -16,6 +16,6 @@ inputs:
 
 run:
   path: concourse/pipeline/build.sh 
-  path: mvn
-  args: ["-f", "concourse/pom.xml", "-DskipTests=true", "package"]
+  #path: mvn
+  #args: ["-f", "concourse/pom.xml", "-DskipTests=true", "package"]
 
