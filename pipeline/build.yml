@@ -14,4 +14,4 @@ outputs:
   - name: resource-app
   
 run:
-  path: resource-seroter-repo/pipeline/build.sh
+  path: concourse/pipeline/build.sh
