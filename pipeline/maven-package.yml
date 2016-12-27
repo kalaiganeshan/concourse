@@ -7,7 +7,7 @@ image_resource:
     tag: latest
 
 inputs:
-  - name: concourse1
+  - name: concourseA
 
 outputs:
  - name: jar-file
