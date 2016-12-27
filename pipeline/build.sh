@@ -2,9 +2,9 @@
 
 set -e -x
 
-git clone resource-seroter-repo resource-app
+git clone concourse jar-file
 
-cd resource-app
+cd jar-file
 
 mvn clean
 
