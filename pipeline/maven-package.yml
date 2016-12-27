@@ -9,7 +9,8 @@ image_resource:
 inputs:
   - name: concourse
 
-#outputs:
+outputs:
+ - name: jar-file
 #  - name: jar-file
 #    path: git-repo/target/
 
