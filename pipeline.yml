@@ -18,18 +18,17 @@ jobs:
       - get: git-repo
         trigger: true
       - get: time
-    #- task: maven-package
-     # privileged: true
-     # file: concourse/pipeline/maven-package.yml
+    - task: maven-package
+      privileged: true
+      file: concourse/pipeline/maven-package.yml
     - task: rename-file
       file: concourse/pipeline/rename-file.yml
 
-  - name: rename file
-    plan:
-    - aggregate:
-      - get: jar-file
-        trigger: true
-        passed: [maven-package]
-      - get: time
-    - task: rename-file
-     file: concourse/pipeline/rename-file.yml
+ # - name: rename file
+   # plan:
+   # - aggregate:
+     # - get: jar-file
+       ##   passed: [maven-package]
+    #  - get: time
+   # - task: rename-file
+    # file: concourse/pipeline/rename-file.yml
