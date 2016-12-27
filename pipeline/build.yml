@@ -8,7 +8,7 @@ image_resource:
     tag: latest
     
 inputs:
-  - name: resource-seroter-repo
+  - name: git-repo
   
 outputs:
   - name: resource-app
