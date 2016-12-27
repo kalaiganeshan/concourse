@@ -22,7 +22,7 @@ jobs:
 
     - task: maven-package
       privileged: true
-      file: concourse/pipeline/maven-package.yml
+      file: concourse/pipeline/build.yml
     - task: rename-file
       file: concourse/pipeline/rename-file.yml
 
