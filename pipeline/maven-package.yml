@@ -13,7 +13,9 @@ inputs:
 #  - name: jar-file
 #    path: git-repo/target/
 
+
 run:
+  path: concourse/pipeline/build.sh 
   path: mvn
   args: ["-f", "concourse/pom.xml", "-DskipTests=true", "package"]
 
