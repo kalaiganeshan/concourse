@@ -14,7 +14,7 @@ The following requirements the pipeline must address:
 
 ## Java, Maven, evtl. Spring Boot
 
-## Usage
+## Usage...
 
 ```
 # build java project
